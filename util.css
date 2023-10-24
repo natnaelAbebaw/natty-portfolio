@@ -1,0 +1,33 @@
+/* .main {
+  perspective: 1100px;
+  position: relative;
+}
+
+.front-page {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-blue-700);
+  min-height: 100vh;
+  transition: transform 5s;
+}
+
+.back-page {
+  position: absolute;
+  inset: 0;
+  background-color: red;
+  min-height: 100vh;
+  transform: rotateX(-180deg);
+  backface-visibility: hidden;
+}
+
+
+
+.page-rotate .front-page {
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+}
+
+.page-rotate .back-page {
+  transform: rotateX(0);
+  transition: transform 5s;
+} */
