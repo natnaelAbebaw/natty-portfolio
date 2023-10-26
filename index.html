@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Lato:wght@100;300;400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Jost:wght@200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -20,94 +21,138 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <style>
+      .circle-container {
+        width: 300px; /* Adjust the width and height for your circle */
+        height: 300px;
+        float: left;
+        margin: 20px;
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        background-color: #3498db; /* Background color for the circle */
+      }
+
+      .circle-text {
+        padding: 20px;
+        text-align: justify; /* Justify the text for a neat look */
+      }
+    </style>
   </head>
+
   <body>
-    <div class="main">
-      <div class="front-page">
-        <header>
-          <a href="#" class="brand-logo"
-            ><span class="logo"> <div>n</div></span> Natnael Abebaw
-          </a>
-
-          <nav>
-            <button>
-              <ion-icon name="moon-outline"></ion-icon>
-              <!-- <ion-icon name="sunny-outline"></ion-icon> -->
-            </button>
-            <a href="#"> <ion-icon name="grid-outline"></ion-icon> </a>
-          </nav>
-        </header>
-        <section class="hero">
-          <div>
-            <h1>
-              Elevating the Digital World Through
-              <span> <div>Fullstack</div></span> Mastery
-            </h1>
-            <p>
-              As a passionate Fullstack Developer, I'm on a relentless journey
-              to transform ideas into stunning digital realities. With a keen
-              eye for front-end finesse and the robust power of back-end
-              solutions, I thrive on the dynamic synergy of web development. Let
-              me take you through my portfolio.
-            </p>
+    <section class="hero">
+      <header class="header">
+        <nav>
+          <div class="brand-logo">
+            <span>n</span> <span>Natnael Abebaw</span>
           </div>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact as</a></li>
+            <li><a href="#">Hire me</a></li>
+          </ul>
+        </nav>
+      </header>
 
-          <img
-            src="https://assets.website-files.com/637853f6f3d6aacb22fa97db/6392099811d7727f54b99e1d_Group%2089-min-p-800.png"
-            alt=""
-          />
-        </section>
-
-        <ion-icon class="down-btn" name="download-outline"></ion-icon>
+      <div class="hero-image">
+        <img src="img/img-hero.png" alt="" />
       </div>
-    </div>
-    <main>
-      <!-- <div class="about-heading">
-        <div class="about-second-layer">
-          <h2>About me</h2>
-        </div>
-      </div> -->
-      <section class="about-me">
-        <h2>About me</h2>
 
-        <div class="story-box">
-          <div class="story-pages">
-            <div class="story-page">
-              <div>1</div>
-              <p>intro</p>
-            </div>
-          </div>
-          <div class="stories">
-            <div class="story">
-              <div class="story-text">
-                <h3>Lorem ipsum dolor sit amet coere.</h3>
+      <div class="circle circle-top">
+        <div class="dot"></div>
+      </div>
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Incidunt odit quam ipsam perferendis vitae vel asperiores
-                  corporis. Necessitatibus repellat tempora dicta, ex beatae
-                  perspiciatis ut illo, temporibus, rem sed unde!
-                </p>
-              </div>
-              <div class="story-img">
-                <img
-                  src="https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                />
-                <span>Natnael Abebaw</span>
-              </div>
-            </div>
-          </div>
+      <div class="circle circle-bottom">
+        <div class="dot"></div>
+      </div>
+      <div class="scroll-animation">
+        <div class="scroll-text">
+          <p>natnael abebaw</p>
+          <p>natnael abebaw</p>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>/About</h2>
+      <div class="date">02/08</div>
+      <div class="arrow"><ion-icon name="arrow-forward-sharp"></ion-icon></div>
+      <div class="about-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          quidem voluptatem, atque odit ipsa sed unde, recusandae quae ex, ullam
+          natus sit at ipsum culpa? Placeat nobis dolor deserunt earum. Lorem
+          ipsum dolor, sit amet consectetur adipisicing elit. Error animi
+          perferendis reprehenderit, eveniet repellat impedit quam quisquam,
+          fuga debitis vitae dolore nostrum fugiat id quasi cumque nobis fugit
+          aliquam dolores?Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Laboriosam quidem voluptatem, atque odit ipsa sed unde,
+          recusandae quae ex, ullam natus sit at ipsum culpa? Placeat nobis
+          dolor deserunt earum. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Error animi perferendis reprehenderit, eveniet
+          repellat impedit quam quisquam, fuga debitis vitae dolore nostrum
+          fugiat id quasi cumque nobis fugit aliquam dolores?
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod eaque
+          tempore explicabo voluptatem aliquid commodi! Impedit earum quisquam
+          est nisi ab voluptates voluptatibus sequi numquam omnis iusto. Eos,
+          corrupti omnis?
+        </p>
+      </div>
+
+      <div class="scroll-text-box">
+        <div class="scroll-text">
+          <p>
+            * Lorem ipsum dolor sit, amet consectetur voluptatibus sequi numquam
+            omnis adipisic autem! *
+          </p>
+          <p>
+            * Lorem ipsum dolor sit, amet consectetur voluptatibus sequi numquam
+            omnis adipisic autem! *
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="work-intro">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+          perspiciatis dolorem et nulla asperiores fugiat a voluptatibus in
+          ullam, sunt harum? Dolor minima adipisci incidunt deleniti voluptatem
+          nihil facere unde.
+        </p>
+
+        <button>get in touch</button>
+      </div>
+      <ul class="works">
+        <li>
+          <h3>maderia</h3>
+          <span>web development</span>
+          <img src="" alt="" />
+        </li>
+
+        <li>
+          <h3>schedule board</h3>
+          <span>mobile development</span>
+          <img src="" alt="" />
+        </li>
+
+        <li>
+          <h3>Note book</h3>
+          <span>web development/react</span>
+          <img src="" alt="" />
+        </li>
+      </ul>
+    </section>
 
     <script>
-      const downBtn = document.querySelector(".down-btn");
-      const main = document.querySelector(".main");
-      downBtn.addEventListener("click", function () {
-        main.classList.add("page-rotate");
-      });
+      const dot = document.querySelector(".slide-word");
+      <!-- console.log(dot.getBoundingClientRect()); -->
+
+      dot.textContent;
     </script>
   </body>
 </html>
