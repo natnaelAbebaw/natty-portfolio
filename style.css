@@ -38,6 +38,10 @@ button {
   font-family: inherit;
   color: inherit;
 }
+a,
+button {
+  cursor: pointer;
+}
 
 .header {
   background-color: aliceblue;
@@ -260,13 +264,15 @@ button {
   background-color: var(--color-brand);
   position: relative;
   z-index: 10;
+}
+.about-box {
   display: grid;
-  padding: 5rem 0;
-  grid-template-columns: repeat(1fr 4);
+  padding: 5rem 15rem;
+  grid-template-columns: repeat(1fr, 4);
+  column-gap: 3rem;
 }
 
 .about h2 {
-  padding: 0 15rem;
   font-size: 20rem;
   text-transform: uppercase;
   letter-spacing: -10px;
@@ -274,7 +280,6 @@ button {
   grid-column: 1/4;
 }
 .about .date {
-  padding: 0 15rem;
   justify-self: end;
   align-self: center;
   font-size: 2.4rem;
@@ -282,18 +287,16 @@ button {
   color: var(--color-grey-700);
 }
 .about .arrow {
-  padding: 0 15rem;
   font-size: 26rem;
   height: 30rem;
   width: 30rem;
   display: inline-block;
-  transform: translate(-6rem, 18rem) rotateZ(-45deg) scale(2);
+  transform: rotateZ(-45deg) scale(2.5);
   grid-column: 1/2;
   animation: scale 1s ease-in;
   color: var(--color-grey-700);
 }
 .about .about-text {
-  padding: 0 15rem;
   grid-column: 2/5;
   color: var(--color-grey-0);
 }
@@ -313,10 +316,10 @@ button {
 
 @keyframes scale {
   from {
-    transform: translate(-6rem, 18rem) rotateZ(-45deg) scale(1);
+    transform: rotateZ(-45deg) scale(1);
   }
   to {
-    transform: translate(-6rem, 18rem) rotateZ(-45deg) scale(2);
+    transform: rotateZ(-45deg) scale(2.5);
   }
 }
 /* ----------------projects-------------------- */
@@ -332,6 +335,7 @@ button {
   display: flex;
   gap: 8rem;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .work-intro p {
@@ -348,12 +352,116 @@ button {
   border-radius: 50%;
   aspect-ratio: 1;
   padding: 2rem;
-  border: 5px solid var(--color-grey-300);
+  border: 2px solid var(--color-grey-300);
   background-color: transparent;
   text-transform: capitalize;
   color: var(--color-brand);
-  font-size: 3rem;
-  font-weight: 500;
-  line-height: 1;
+  font-size: 3.2rem;
+  line-height: 1.2;
   cursor: pointer;
+}
+
+.works-box h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  color: var(--color-brand);
+}
+
+.works {
+  margin-bottom: 4.8rem;
+}
+
+.works li {
+  border-top: 1.5px dashed var(--color-brand);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 2rem;
+  position: relative;
+  overflow-clip-margin: hidden;
+  cursor: pointer;
+  height: 12rem;
+  transition: all 1s;
+}
+.works li:last-child {
+  border-bottom: 1.5px dashed var(--color-brand);
+}
+
+.works li:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 2rem;
+  background-color: var(--color-grey-200);
+  inset: 50%;
+  transform: translate(-50%, 30%);
+  transition: transform 1s;
+}
+
+.works li h3 {
+  font-size: 7rem;
+  color: var(--color-brand);
+  font-weight: 800;
+}
+
+.works li img {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  left: 50%;
+  width: 20%;
+  background-color: var(--color-grey-700);
+  border: 10px solid var(--color-grey-300);
+  z-index: 10;
+  transition: all 1s;
+  transform: translateY(5rem);
+}
+
+.works li:hover {
+  height: 15rem;
+}
+.works li:hover::after {
+  transform: translate(-50%, 150%);
+}
+.works li:hover img {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  pointer-events: none;
+  transform: translateY(0);
+}
+
+.works-box div:last-child {
+  text-align: center;
+}
+
+.works-box button {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  border-bottom: 2px solid var(--color-grey-200);
+  position: relative;
+  color: var(--color-brand);
+}
+
+.works-box button::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  background-color: var(--color-brand);
+  inset: auto 50% 0 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s;
+}
+
+.works-box button:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
