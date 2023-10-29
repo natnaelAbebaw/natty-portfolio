@@ -21,22 +21,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <style>
-      .circle-container {
-        width: 300px; /* Adjust the width and height for your circle */
-        height: 300px;
-        float: left;
-        margin: 20px;
-        shape-outside: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-        background-color: #3498db; /* Background color for the circle */
-      }
 
-      .circle-text {
-        padding: 20px;
-        text-align: justify; /* Justify the text for a neat look */
-      }
-    </style>
+    <script defer src="./script.js"></script>
   </head>
 
   <body>
@@ -50,7 +36,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Project</a></li>
             <li><a href="#">Contact as</a></li>
-            <li><a href="#">Hire me</a></li>
+            <li><a class="btn btn--outline" href="#">Hire me</a></li>
           </ul>
         </nav>
       </header>
@@ -168,20 +154,59 @@
             <img
               src="https://images.yourstory.com/cs/2/dc9aa130-2d6c-11e9-aa97-9329348d4c3e/Screenshot_20190815_022013_(1)1565815926113.jpg"
               alt=""
+              center
             />
           </li>
         </ul>
         <div>
-          <button class="">&downarrow; see more works</button>
+          <button class="btn btn--underline">&downarrow; see more works</button>
         </div>
       </div>
     </section>
 
-    <script>
-      const dot = document.querySelector(".slide-word");
-      <!-- console.log(dot.getBoundingClientRect()); -->
+    <section class="skills">
+      <div class="skills-box">
+        <div>
+          <ul>
+            <li>web</li>
+            <li>Mobile</li>
+            <li>design</li>
+          </ul>
 
-      dot.textContent;
-    </script>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nam
+            deleniti odio ea delectus, suscipit nemo consequuntur blanditiis
+            asperiores? Adipisci consequuntur voluptates veniam quis hic quasi
+            in itaque fuga iusto?
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="https://images.yourstory.com/cs/2/dc9aa130-2d6c-11e9-aa97-9329348d4c3e/Screenshot_20190815_022013_(1)1565815926113.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="contact">
+        <ion-icon name="arrow-forward-sharp"></ion-icon>
+        <p>let's work togather</p>
+        <button class="btn btn--outline">send me a message</button>
+      </div>
+
+      <div class="name">natnael abebaw</div>
+      <div>
+        <span>&copy; natanel abebaw portfolio 2023 All right reserved.</span>
+        <nav>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon>linkedin</a>
+          <a href="#"><ion-icon name="logo-github"></ion-icon> github</a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon>X</a>
+        </nav>
+      </div>
+    </section>
   </body>
 </html>
