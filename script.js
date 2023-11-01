@@ -20,12 +20,15 @@ sections.forEach((section) => {
 function moveSquare(squareDivClass, pathDivClass) {
   const rectPath = document.querySelector(`.${pathDivClass}`);
   const arrow = document.querySelector(`.${squareDivClass}`);
-  let height = Math.floor(rectPath.getBoundingClientRect().height);
-  let width = Math.floor(rectPath.getBoundingClientRect().width);
+  // const height = Math.floor(rectPath.getBoundingClientRect().height);
+  // const width = Math.floor(rectPath.getBoundingClientRect().width);
   let x = 0;
   let y = 0;
 
   setInterval(function () {
+    const height = Math.floor(rectPath.getBoundingClientRect().height);
+    const width = Math.floor(rectPath.getBoundingClientRect().width);
+
     if (x < width && y <= 0) {
       x++;
       arrow.style.left = `${x}px`;
@@ -60,3 +63,5 @@ setInterval(() => {
 
 moveSquare("arrow-top", "square-top");
 moveSquare("arrow-bottom", "square-bottom");
+
+// observer2.observe(bg);
