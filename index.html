@@ -5,14 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natty's portfolio</title>
     <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@700&family=Jost:wght@200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Jost:wght@200;300;400;500;600;700;800;900&family=Petrona:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -26,48 +21,51 @@
   </head>
 
   <body>
-    <header class="header">
-      <nav>
-        <div class="brand-logo"><span>n</span> <span>Natnael Abebaw</span></div>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact as</a></li>
-          <li><a class="btn btn--outline" href="#">Hire me</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="hero" class="hero">
+      <header class="header">
+        <nav>
+          <div class="brand-logo">
+           <a href="#hero"><span>n</span> <span>Natnael .A</span></a> 
+          </div>
 
-    <div class="hero">
+          <ul class="nav-links">
+            <li><a class="active" href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a class="btn btn--fill" href="#getintouch">Get In Touch</a></li>
+          </ul>
+
+          
+  
+          <ion-icon class="humburger" name="menu-outline"></ion-icon>
+          <ion-icon class="close" name="close-outline"></ion-icon>
+
+        </nav>
+      </header>
       <div class="hero-box">
         <div class="hero-heading">
-          <h1>
-            <span class="auto-text">Passionate</span> <span>Developer</span>
-          </h1>
-          <p>Bringing Ideas to Life with Code</p>
+         
+          <h1>an enthusiastic software developer based in Ethiopia <span>&mdash; specializing in full-stack and mobile development</span></h1>
         </div>
-        <div class="hero-image">
-          <!-- <img src="img/img-hero.png" alt="" /> -->
-        </div>
-      </div>
 
-      <div class="square square-bottom">
-        <div class="arrow arrow-bottom"></div>
-      </div>
-
-      <div class="square square-top">
-        <div class="arrow arrow-top"></div>
-      </div>
+      <ul class="contact-links">
+        <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href=""></ion-icon><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href=""><svg class="x-icon-l">
+          <use xlink:href="./img/sprite.svg#x"></use>
+        </svg></a></li>
+       </ul>
     </div>
+  </div>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-box">
-        <h2>About</h2>
-        <div class="date">02/08/2023</div>
-        <div class="info-icon">
+        <h2 class="a">About</h2>
+        <div class="a date">02/08/2023</div>
+        <div  class="a info-icon">
           <ion-icon name="information-circle-outline"></ion-icon>
         </div>
-        <div class="about-text">
+        <div class="a about-text">
           <p>
             "I'm a Fullstack and Mobile Developer, passionate about creating
             seamless digital experiences. In my portfolio, you'll find a
@@ -82,26 +80,25 @@
         </div>
       </div>
 
-      <div class="scroll-text-box">
+      <div class="a scroll-text-box">
         <div class="scroll-text">
           <p>
-            <ion-icon name="code-outline"></ion-icon> BRINGING IDEAS TO LIFE
-            WITH CODE
-            <ion-icon name="code-slash-outline"></ion-icon>&NonBreakingSpace;
-            <ion-icon name="code-working-outline"></ion-icon>&NonBreakingSpace;
+           ------BRINGING IDEAS TO LIFE WITH CODE------&NonBreakingSpace;&NonBreakingSpace;      ------BRINGING IDEAS TO LIFE WITH CODE------&NonBreakingSpace;&NonBreakingSpace;
           </p>
-          <p>
-            <ion-icon name="code-outline"></ion-icon> BRINGING IDEAS TO LIFE
-            WITH CODE
-            <ion-icon name="code-slash-outline"></ion-icon>&NonBreakingSpace;
-            <ion-icon name="code-working-outline"></ion-icon>&NonBreakingSpace;
+          <p>------BRINGING IDEAS TO LIFE WITH CODE------
+        &NonBreakingSpace;&NonBreakingSpace;      ------BRINGING IDEAS TO LIFE WITH CODE------&NonBreakingSpace;&NonBreakingSpace;
           </p>
+          
         </div>
       </div>
     </section>
 
-    <section class="skills-section">
-      <h2>skills</h2>
+    <section id="skills"  class="skills-section">
+      <div>
+        <h2>skills</h2>
+      </div>
+  
+    
 
       <div class="skills">
         <div class="skill skill--1">
@@ -147,7 +144,7 @@
         </div>
 
         <div class="skill skill--2">
-          <h3><span>back end</span></h3>
+          <h3><span>back&NonBreakingSpace; end</span></h3>
           <div class="skill-content">
             <p>
               Experienced in back-end development, My work involves server-side
@@ -206,16 +203,17 @@
           </div>
         </div>
       </div>
+    
     </section>
 
-    <section class="projects">
+    <section id="works"  class="projects">
       <div class="works-box">
         <div class="works-topbar">
           <h2>works</h2>
           <ul>
-            <li>front end</li>
-            <li>back end</li>
-            <li>mobile app</li>
+            <li><button class="btn btn--underline">front end</button></li>
+            <li><button class="btn btn--underline">back end</button></li>
+            <li><button class="btn btn--underline">mobile app</button></li>
           </ul>
         </div>
 
@@ -240,10 +238,7 @@
                 rerum harum eaque?
               </p>
             </div>
-            <div class="btns">
-              <button class="btn btn--fill">live</button>
-              <button class="btn btn--fill">source code</button>
-            </div>
+            
           </li>
 
           <li class="work">
@@ -266,10 +261,7 @@
                 rerum harum eaque?
               </p>
             </div>
-            <div class="btns">
-              <button class="btn btn--fill">live</button>
-              <button class="btn btn--fill">source code</button>
-            </div>
+            
           </li>
 
           <li class="work">
@@ -292,10 +284,7 @@
                 rerum harum eaque?
               </p>
             </div>
-            <div class="btns">
-              <button class="btn btn--fill">live</button>
-              <button class="btn btn--fill">source code</button>
-            </div>
+            
           </li>
 
           <li class="work">
@@ -318,31 +307,75 @@
                 rerum harum eaque?
               </p>
             </div>
-            <div class="btns">
-              <button class="btn btn--fill">live</button>
-              <button class="btn btn--fill">source code</button>
-            </div>
+           
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="footer">
-      <div class="contact">
-        <ion-icon name="arrow-forward-sharp"></ion-icon>
-        <p>let's work togather</p>
-        <button class="btn btn--outline">send me a message</button>
+    <section id="getintouch"  class="section-get-in-touch">
+      <div class="get-in-touch-box">
+        <div class="contacts">
+          <div>
+          <h2>get in touch</h2>
+          <div>
+            <p>
+              Allow me to participate as your creative collaborator in the software development journey, collectively shaping a notable presence within the software industry.
+            </p>
+          </div>
+        </div>
+          
+        <div class="contact-details">
+          <h3>contact details</h3>
+          <div>
+          <address><ion-icon name="location-outline"></ion-icon><span>king george VI st. Addis Ababa, Ethiopia</span></address>
+          <a href=""> <ion-icon name="call-outline"></ion-icon><span>+251 920123302</span> </a>
+          <a href=""><ion-icon name="mail-outline"></ion-icon> natnaell70a@gmail.com</a>
+        </div>
+        </div>
+        <ul class="contact-links">
+          <li><a href=""><ion-icon name="logo-linkedin"></ion-icon><span>linkedin</span></a></li>
+          <li><a href=""></ion-icon><ion-icon name="logo-github"></ion-icon><span>github</span></a></li>
+          <li><a href=""><svg class="x-icon-l">
+            <use xlink:href="./img/sprite.svg#x"></use>
+          </svg><span>x</span></a></li>
+         </ul>
+        </div>
+
+        <div class="message-form-box">
+          <div>
+            <h2>send me message</h2>
+            <p>
+              Let me be your creative partner in software development, making a significant impact in the industry together.
+
+            </p>
+
+          </div>
+             
+        <form action="">
+          <input type="text" name="" placeholder="What is your name?" id="">
+          <input type="text" name="" placeholder="Your email address?" id="">
+          <textarea type="" name="" placeholder="How can we help?" id="" ></textarea>
+          <button>send message</button>
+        </form>
+      
       </div>
+       </section>
+
+    <footer class="footer">
+    
 
       <div class="name">natnael abebaw</div>
       <div>
-        <span>&copy; natanel abebaw portfolio 2023 All right reserved.</span>
+        <div>&copy; Natanel Abebaw portfolio 2023 All right reserved.</div>
         <nav>
-          <a href="#"><ion-icon name="logo-linkedin"></ion-icon>linkedin</a>
-          <a href="#"><ion-icon name="logo-github"></ion-icon> github</a>
-          <a href="#"><ion-icon name="logo-twitter"></ion-icon>X</a>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon><span>linkedin</span></a>
+          <a href="#"><ion-icon name="logo-github"></ion-icon><span>github</span></a>
+          <a href="#"><svg class="x-icon">
+            <use xlink:href="./img/sprite.svg#x"></use>
+          </svg><span>X</span></a>
         </nav>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
