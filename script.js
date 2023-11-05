@@ -40,15 +40,19 @@ document.addEventListener("click", function (e) {
   }
 });
 
-const links = document.querySelectorAll("header ul a");
-
+const navLinks = document.querySelectorAll("header ul a");
 function changeLinkState() {
-  const index = sections.length;
+  let index = sections.length;
 
-  if (--index && window.scrollY + 50 < sections[index].scrollTop) {
+  while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+  if (window.scrollY + 50 > sections[index].offsetTop) {
+    navLinks.forEach((link) => link.classList.remove("active"));
+    navLinks[index].classList.add("active");
   }
-  links.forEach((link) => link.classList.remove("active"));
-  links[index].classList.remove("active");
+  if (window.scrollY + 50 < sections[index].offsetTop) {
+    navLinks.forEach((link) => link.classList.remove("active"));
+  }
 }
 
 changeLinkState();
