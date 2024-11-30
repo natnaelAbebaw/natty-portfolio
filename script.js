@@ -61,7 +61,7 @@ window.addEventListener("scroll", changeLinkState);
 
 const worksList = [
   {
-    img: "https://drive.google.com/uc?id=1y8qWmmxlOj91Nv5kNeRFH7T-48dRant-",
+    img: "./images/1.png",
     title: "Web-snake",
     type: "web development",
     catagory: "front-end",
@@ -70,7 +70,7 @@ const worksList = [
     text: `Dive into nostalgia with my web-based Snake Game! Crafted solely with HTML, CSS, and JavaScript—no frameworks involved. Enjoy sleek, responsive design, intuitive controls, and dynamic gameplay as you slither through a visually pleasing environment. Challenge your friends, track high scores, and experience timeless fun in this minimalist, yet engaging, creation. Explore the beauty of simplicity in web development with this classic Snake Game.`,
   },
   {
-    img: "https://drive.google.com/uc?id=1e4-vNX4990yqn8ixd2VowvqjWUr9Pzmt",
+    img: "./images/2.png",
     title: "Note book",
     type: "web development",
     catagory: "front-end",
@@ -78,7 +78,6 @@ const worksList = [
     liveLink: "https://note-taking-app-silk-one.vercel.app/",
     text: `Elevate your note-taking game with my React Notebook App. Seamlessly group notes into notebooks for easy organization. Effortlessly search through your notes, finding what you need in an instant. Mark favorites for quick access to your most important thoughts. This app, built with React, combines functionality and simplicity for an enhanced note-taking experience.`,
   },
-  ,
 ];
 
 let workTypeState = "";
